@@ -17,4 +17,4 @@ Hands-on lab environment focused on networking, Linux, and security operations.
 - VMs: Kali Linux, Metasploitable2
 
 ## Labs
-- [vsFTPd Exploit](./exploitation/vsftpd-exploit.md)
+- [vsFTPd Exploit](./Exploitation/vsftpd-exploit.md)
