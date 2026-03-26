@@ -1,20 +1,57 @@
-# Waegns-labs
-Hands-on cybersecurity and networking lab exercises (Kali, Linux, enumeration, exploitation)
+# Waegns Labs
 
-# WAEGN Labs
+## Overview
 
-Hands-on lab environment focused on networking, Linux, and security operations.
+This repository serves as a central index for hands-on cybersecurity and IT infrastructure labs.
 
-## Focus Areas
-- Networking fundamentals (A+, Net+)
-- Linux command line
-- Enumeration and exploitation
-- System troubleshooting
+Each lab focuses on real-world problem solving, troubleshooting, and system interaction.
 
-## Lab Environment
-- Host: Windows 11
-- Hypervisor: VirtualBox
-- VMs: Kali Linux, Metasploitable2
+---
 
 ## Labs
-- [vsFTPd Exploit](./Exploitation/vsftpd-exploit.md)
+
+### 🖥️ Windows Troubleshooting Lab
+
+* Repository: https://github.com/waegns/windows-ui-freeze-troubleshooting
+* Focus:
+
+  * Explorer.exe debugging
+  * SMB/network share issues
+  * OS-level troubleshooting
+
+---
+
+### 🧪 Metasploitable Exploitation Lab
+
+* Repository: https://github.com/waegns/YOUR-EXPLOIT-REPO-NAME
+* Focus:
+
+  * Nmap scanning
+  * Service enumeration
+  * Exploitation workflow
+
+---
+
+## Skills Demonstrated
+
+* Windows OS troubleshooting
+* Network diagnostics
+* Git version control (CLI)
+* Structured root cause analysis
+* Lab documentation and reporting
+
+---
+
+## Purpose
+
+This lab series is designed to build operational experience for roles in:
+
+* IT Support
+* Infrastructure Operations
+* Security Operations (SOC)
+
+---
+
+## Status
+
+Active – continuously expanding with new labs
