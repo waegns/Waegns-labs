@@ -1,57 +1,49 @@
 # Waegns Labs
 
-## Overview
+## 🔗 Overview
 
-This repository serves as a central index for hands-on cybersecurity and IT infrastructure labs.
-
-Each lab focuses on real-world problem solving, troubleshooting, and system interaction.
+This repository serves as a central hub for hands-on IT and cybersecurity labs focused on real-world troubleshooting and system interaction.
 
 ---
 
-## Labs
+## 🧪 Featured Labs
 
-### 🖥️ Windows Troubleshooting Lab
+### 🖥️ Windows UI Freeze Troubleshooting
 
-* Repository: https://github.com/waegns/windows-ui-freeze-troubleshooting
-* Focus:
-
-  * Explorer.exe debugging
-  * SMB/network share issues
-  * OS-level troubleshooting
+* 🔗 https://github.com/waegns/windows-ui-freeze-troubleshooting
+* Diagnosed intermittent UI failure caused by explorer.exe and network share conflicts
 
 ---
 
-### 🧪 Metasploitable Exploitation Lab
+### ⚔️ VSFTPD Exploitation Lab
 
-* Repository: https://github.com/waegns/Waegns-labs/blob/Exploitation/vsftpd-exploit.md
-* Focus:
-
-  * Nmap scanning
-  * Service enumeration
-  * Exploitation workflow
+* 🔗 https://github.com/waegns/Waegns-labs/blob/main/Exploitation/vsftpd-exploit.md
+* Exploited vsFTPd 2.3.4 backdoor on Metasploitable2
+* Tools: Nmap, Metasploit, Netcat
 
 ---
 
-## Skills Demonstrated
+## 🧠 Skills Demonstrated
 
-* Windows OS troubleshooting
+* Windows troubleshooting
 * Network diagnostics
-* Git version control (CLI)
-* Structured root cause analysis
-* Lab documentation and reporting
+* Linux enumeration & exploitation
+* Git (command-line workflow)
+* Root cause analysis
 
 ---
 
-## Purpose
+## 🎯 Objective
 
-This lab series is designed to build operational experience for roles in:
+Build real-world experience for:
 
 * IT Support
-* Infrastructure Operations
+* Infrastructure / Data Center Ops
 * Security Operations (SOC)
 
 ---
 
-## Status
+## 📈 Status
 
-Active – continuously expanding with new labs
+Active – expanding lab portfolio
+
