@@ -23,7 +23,7 @@ Each lab focuses on real-world problem solving, troubleshooting, and system inte
 
 ### 🧪 Metasploitable Exploitation Lab
 
-* Repository: https://github.com/waegns/YOUR-EXPLOIT-REPO-NAME
+* Repository: https://github.com/waegns/blob/main/vsftpd-exploit.md
 * Focus:
 
   * Nmap scanning
