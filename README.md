@@ -15,6 +15,18 @@ This repository serves as a central hub for hands-on IT and cybersecurity labs f
 
 ## 🧪 Featured Labs
 
+### 🔐 Security Control Types Lab
+
+* 🔗 https://github.com/waegns/Waegns-labs/blob/main/Security_Control_Types.md
+* Implemented all six security control types in a Windows environment:
+  - Preventive (file permissions)
+  - Detective (SHA256 hashing)
+  - Corrective (file restoration)
+  - Directive (policy enforcement)
+  - Deterrent (warning messaging)
+  - Compensating (backup strategy)
+* Demonstrated full integrity lifecycle: baseline → tamper → detect → restore → verify
+
 ### 🔐 CIA Triad Demonstration
 
 * 🔗 https://github.com/waegns/Waegns-labs/blob/main/01_Windows_Labs/Lab_CIA_Triad.md
