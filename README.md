@@ -8,7 +8,7 @@ This repository serves as a central hub for hands-on IT and cybersecurity labs f
 
 ## 📁 Repository Structure
 
-* 01_Windows_Labs/ → Windows-based labs and system analysis
+* Windows_Labs/ → Windows-based labs and system analysis
 * Exploitation/ → Offensive security labs (Metasploit, vulnerability exploitation)
 * screenshots/ → Supporting visuals
 
