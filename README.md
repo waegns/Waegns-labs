@@ -1,12 +1,27 @@
+
 # Waegns Labs
 
 ## 🔗 Overview
 
 This repository serves as a central hub for hands-on IT and cybersecurity labs focused on real-world troubleshooting and system interaction.
 
+## 📁 Repository Structure
+
+- 01_Windows_Labs/ → Windows-based labs and troubleshooting
+- Exploitation/ → Offensive security labs (Metasploit, vuln exploitation)
+- screenshots/ → Supporting visuals (if applicable)
+
 ---
 
 ## 🧪 Featured Labs
+
+### 🔐 CIA Triad Demonstration
+
+* 🔗 https://github.com/waegns/Waegns-labs/blob/main/01_Windows_Labs/Lab_CIA_Triad.md
+* Demonstrated confidentiality, integrity, and availability using Windows command line tools
+* Tools: icacls, certutil, CMD
+
+---
 
 ### 🖥️ Windows UI Freeze Troubleshooting
 
@@ -35,7 +50,7 @@ This repository serves as a central hub for hands-on IT and cybersecurity labs f
 
 ## 🎯 Objective
 
-Build real-world experience for:
+Develop operational capability for:
 
 * IT Support
 * Infrastructure / Data Center Ops
