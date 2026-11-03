@@ -1,6 +1,14 @@
 # Waegns Labs
 
-Hands-on IT and cybersecurity labs: Windows security controls, log-based threat detection, and offensive security in an isolated lab. Each write-up covers the objective, exact commands, evidence, and what I learned.
+Hands-on IT and cybersecurity labs: Windows security controls, log-based threat detection, networking, and offensive security in an isolated lab. Each write-up covers the objective, exact commands, evidence, and what I learned. Labs marked *guided* were done hands-on with step-by-step help.
+
+## Home Lab and Projects
+
+| Write-up | What it shows |
+| --- | --- |
+| [IRONFORGE Home Lab](homelab/ironforge.md) | Lab architecture: Proxmox, OPNsense firewall with VLANs, Cisco switching, WireGuard VPN, RHEL VMs |
+| [Netgear M4100 Switch Recovery](networking/netgear-m4100-switch-recovery.md) *(guided)* | Recovered a locked used switch over serial console, CFE bootloader, and TFTP network boot |
+| [Part Scout](projects/part-scout.md) | Python deal tracker: local model flags real discounts against SQLite price history and sends email and text alerts |
 
 ## Lab Index
 
@@ -16,6 +24,9 @@ Hands-on IT and cybersecurity labs: Windows security controls, log-based threat 
 ## Repository Structure
 
 ```text
+homelab/            Lab architecture and hardware
+networking/         Switching, routing, and network device labs
+projects/           Automation tools I built for my own workflow
 detection/          Windows Security Event Log analysis and threat detection
 windows-security/   Security controls and CIA triad on Windows 11
 offensive/          Exploitation labs against intentionally vulnerable targets
@@ -34,4 +45,4 @@ offensive/          Exploitation labs against intentionally vulnerable targets
 
 ## Skills Demonstrated
 
-Security monitoring · Windows event log analysis · Threat detection · Access control · File integrity verification · Service enumeration · Exploitation · Root cause analysis · Technical documentation · Git
+Network segmentation · Serial console and bootloader recovery · Virtualization · Security monitoring · Windows event log analysis · Threat detection · Access control · File integrity verification · Service enumeration · Exploitation · Root cause analysis · Technical documentation · Git
