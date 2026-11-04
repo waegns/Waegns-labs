@@ -45,7 +45,7 @@ flowchart TB
 
 ## Virtual Machines
 
-- **Red Hat Enterprise Linux (RHEL) 10:** three VMs in VMware Workstation (two servers, one utility) for Linux administration practice. Registered with Red Hat, set up SSH key access.
+- **Red Hat Enterprise Linux (RHEL) 10:** three VMs in VMware Workstation (two managed nodes, one controller) for Linux administration practice. Registered with Red Hat and networked by name on a static host-only segment; SSH key access is next. Full write-up: [rhel-ops-lab](https://github.com/waegns/rhel-ops-lab).
 - **Kali Linux and Metasploitable 2:** offensive security practice on an isolated network. See the [vsFTPd lab](../offensive/vsftpd-backdoor-exploit.md).
 - **Ollama:** runs local models (Qwen, DeepSeek-R1) for [Scribe](https://github.com/waegns/scribe) and [Part Scout](../projects/part-scout.md).
 

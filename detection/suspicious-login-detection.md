@@ -1,25 +1,21 @@
 # Suspicious Login Detection Lab
 
-**Tags:** #AAA #SecurityPlus #SOC #WindowsLogs #Detection #BlueTeam
-
----
-
-## 🔗 Overview
+## Overview
 
 Simulated and analyzed a suspicious login pattern using Windows Event Viewer to understand how authentication failures followed by a successful login may indicate potential brute-force or credential compromise activity.
 
 ---
 
-## 🧠 Concepts Applied
+## Concepts Applied
 
-* #Authentication → Event ID 4624 (Successful login)
-* #Authorization → Event ID 4672 (Elevated privileges assigned)
-* #Accounting → Windows Security Logs (Event Viewer)
-* #Detection → Pattern recognition across login events
+* Authentication → Event ID 4624 (Successful login)
+* Authorization → Event ID 4672 (Elevated privileges assigned)
+* Accounting → Windows Security Logs (Event Viewer)
+* Detection → Pattern recognition across login events
 
 ---
 
-## 🧪 Lab Setup
+## Lab Setup
 
 **Environment:**
 
@@ -29,7 +25,7 @@ Simulated and analyzed a suspicious login pattern using Windows Event Viewer to 
 
 ---
 
-## ⚙️ Actions Performed
+## Actions Performed
 
 1. Locked system (`Win + L`)
 2. Entered incorrect password multiple times
@@ -39,21 +35,17 @@ Simulated and analyzed a suspicious login pattern using Windows Event Viewer to 
 
 ---
 
-## 🔍 Observed Events
+## Observed Events
 
 | Event ID | Type          | Description                 |
-
 | -------- | ------------- | --------------------------- |
-
 | 4625     | Audit Failure | Failed login attempt        |
-
 | 4624     | Audit Success | Successful login            |
-
 | 4672     | Audit Success | Special privileges assigned |
 
 ---
 
-## 🚨 Detection Pattern
+## Detection Pattern
 
 ```
 4625 → 4625 → 4624 → 4672
@@ -68,7 +60,7 @@ Simulated and analyzed a suspicious login pattern using Windows Event Viewer to 
 
 ---
 
-## ⚠️ Risk Assessment
+## Risk Assessment
 
 * Successful login after repeated failures increases likelihood of compromise
 * Presence of Event ID 4672 indicates administrative-level access
@@ -76,7 +68,7 @@ Simulated and analyzed a suspicious login pattern using Windows Event Viewer to 
 
 ---
 
-## 🛠️ Response Considerations
+## Response Considerations
 
 * Validate user identity
 * Check login timestamps for anomalies
@@ -85,22 +77,9 @@ Simulated and analyzed a suspicious login pattern using Windows Event Viewer to 
 
 ---
 
-## 🧠 Key Takeaways
+## Key Takeaways
 
 * AAA is directly observable in system logs
 * Event correlation is critical for detection
 * Not all successful logins are safe
 * Context determines threat level
-
----
-
-## 📌 Portfolio Value
-
-This lab demonstrates:
-
-* Practical understanding of AAA concepts
-* Ability to analyze Windows security logs
-* Entry-level SOC analyst detection workflow
-* Real-world security thinking beyond theory
-
----

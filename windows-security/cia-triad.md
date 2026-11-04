@@ -1,31 +1,27 @@
-# Lab 001 — CIA Triad Demonstration
+# CIA Triad Demonstration
 
-#lab #securityplus #cia #windows #commandline #blueprint
-
----
-
-## 🎯 Objective
+## Objective
 
 Demonstrate core security principles:
 
-* #confidentiality
-* #integrity
-* #availability
+* Confidentiality
+* Integrity
+* Availability
 
 Using local Windows commands and observable outcomes.
 
 ---
 
-## 🖥️ Environment
+## Environment
 
-* OS: #windows11
-* Shell: #cmd
+* OS: Windows 11
+* Shell: Command Prompt (cmd)
 * Path: `C:\lab_cia`
 * Asset: `data.txt`
 
 ---
 
-## 🧱 Step 1 — Asset Creation #asset #baseline
+## Step 1 — Asset Creation
 
 ```cmd
 mkdir C:\lab_cia
@@ -33,46 +29,46 @@ cd C:\lab_cia
 echo This is sensitive data > data.txt
 ```
 
-### 🔍 Verification
+### Verification
 
 ```cmd
 dir
 type data.txt
 ```
 
-### 🧠 Insight
+### Insight
 
 * No asset → no need for security
 * Establishes baseline state
 
 ---
 
-## 🔐 Step 2 — Confidentiality #confidentiality #accesscontrol #preventive
+## Step 2 — Confidentiality
 
 ```cmd
 icacls data.txt /inheritance:r
 icacls data.txt /grant %username%:F
 ```
 
-### 🔍 Verification
+### Verification
 
 ```cmd
 icacls data.txt
 ```
 
-### 🎯 Result
+### Result
 
 * Only authorized user has access
 * Removed inherited permissions
 
-### 🧠 Insight
+### Insight
 
 * Access control enforces **who can see data**
-* Maps to #preventive control
+* Maps to preventive control
 
 ---
 
-## 🧬 Step 3 — Integrity #integrity #hashing #detective
+## Step 3 — Integrity
 
 ```cmd
 certutil -hashfile data.txt SHA256
@@ -80,19 +76,19 @@ echo attacker was here >> data.txt
 certutil -hashfile data.txt SHA256
 ```
 
-### 🎯 Result
+### Result
 
 * Hash values changed after modification
 * Any change → detectable
 
-### 🧠 Insight
+### Insight
 
 * Integrity = trustworthiness of data
-* Maps to #detective control
+* Maps to detective control
 
 ---
 
-## ⚡ Step 4 — Availability #availability #resilience #corrective
+## Step 4 — Availability
 
 ```cmd
 rename data.txt data.bak
@@ -100,33 +96,29 @@ type data.txt
 rename data.bak data.txt
 ```
 
-### 🎯 Result
+### Result
 
 * File inaccessible → availability failure
 * File restored → access regained
 
-### 🧠 Insight
+### Insight
 
 * Availability = accessible when needed
-* Maps to #corrective control
+* Maps to corrective control
 
 ---
 
-## 📊 Control Mapping #controls #pddccd
+## Control Mapping
 
 | Action             | CIA              | Control Type |
-
 | ------------------ | ---------------- | ------------ |
-
-| icacls permissions | #confidentiality | #preventive  |
-
-| hash comparison    | #integrity       | #detective   |
-
-| restore file       | #availability    | #corrective  |
+| icacls permissions | Confidentiality  | Preventive   |
+| hash comparison    | Integrity        | Detective    |
+| restore file       | Availability     | Corrective   |
 
 ---
 
-## 🧠 Key Concepts #recall #exam
+## Key Concepts
 
 * Confidentiality → who can access
 * Integrity → has it changed
@@ -134,24 +126,8 @@ rename data.bak data.txt
 
 ---
 
-## 🗣️ Interview Statement #interview #portfolio
+## Future Improvements
 
-“I demonstrated the CIA triad by restricting access using icacls, validating file integrity with SHA256 hashing, and simulating availability loss and recovery through controlled file access disruption.”
-
----
-
-## 🔗 Related Notes
-
-* [[Security Controls]]
-* [[CIA Triad]]
-* [[Hashing Concepts]]
-
----
-
-## 🚀 Future Improvements #nextsteps
-
-* Add file monitoring (#detective)
-* Implement encryption (#confidentiality)
-* Automate backups (#corrective)
-
----
+* Add file monitoring (detective)
+* Implement encryption (confidentiality)
+* Automate backups (corrective)

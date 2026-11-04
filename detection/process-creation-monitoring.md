@@ -1,16 +1,12 @@
 # Process Creation Monitoring Lab
 
-**Tags:** #SecurityPlus #WindowsLogs #Detection #SOC #ProcessMonitoring
-
----
-
-## 🔗 Overview
+## Overview
 
 Monitored process execution using Windows Event ID 4688 to understand how systems log program activity and how this data can be used for threat detection.
 
 ---
 
-## 🧠 Concept
+## Concept
 
 Event ID 4688 logs when a new process is created, including:
 
@@ -20,7 +16,7 @@ Event ID 4688 logs when a new process is created, including:
 
 ---
 
-## 🧪 Actions Performed
+## Actions Performed
 
 - Enabled process creation auditing
 - Executed programs:
@@ -32,7 +28,7 @@ Event ID 4688 logs when a new process is created, including:
 
 ---
 
-## 🔍 Observed Events
+## Observed Events
 
 Event ID: 4688
 
@@ -43,7 +39,7 @@ Examples:
 
 ---
 
-## 🚨 Detection Insight
+## Detection Insight
 
 Suspicious patterns include:
 
@@ -53,7 +49,7 @@ Suspicious patterns include:
 
 ---
 
-## 🛠️ Response Considerations
+## Response Considerations
 
 - Verify user intent
 - Check frequency and timing
@@ -62,7 +58,7 @@ Suspicious patterns include:
 
 ---
 
-## 🧠 Key Takeaways
+## Key Takeaways
 
 - Event 4688 provides visibility into system activity
 - Process chains are critical for detection

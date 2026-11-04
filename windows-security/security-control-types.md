@@ -1,26 +1,22 @@
-# 🧪 Lab: Security Control Types (Windows) #lab #security #secplus #windows #defense-in-depth
+# Security Control Types (Windows)
 
-## 🎯 Objective
+## Objective
 
 Implement and validate all major security control types in a Windows environment.
 
-#objective #security-controls #hands-on
-
 ---
 
-## 🧱 Environment
+## Environment
 
 * Host: Windows 11 (HP OmniDesk)
 * Shell: Command Prompt (cmd)
 * Directory: `C:\Users\Waegn\Desktop\Waegns-labs`
 
-#environment #windows #cmd #homelab
-
 ---
 
-## ⚙️ Control Implementations
+## Control Implementations
 
-### 🛡️ Preventive Control #preventive #technical-control
+### Preventive Control
 
 **Command**
 
@@ -34,7 +30,7 @@ Prevents unauthorized modification via file permissions.
 
 ---
 
-### 🔍 Detective Control #detective #integrity #hashing
+### Detective Control
 
 **Command**
 
@@ -48,7 +44,7 @@ Detects file changes through hash comparison.
 
 ---
 
-### 🔧 Corrective Control #corrective #recovery
+### Corrective Control
 
 **Command**
 
@@ -62,7 +58,7 @@ Restores original data after compromise.
 
 ---
 
-### 📜 Directive Control #directive #policy #administrative-control
+### Directive Control
 
 **Command**
 
@@ -76,7 +72,7 @@ Defines expected user behavior.
 
 ---
 
-### 🚫 Deterrent Control #deterrent #awareness #behavior
+### Deterrent Control
 
 **Command**
 
@@ -90,7 +86,7 @@ Discourages unauthorized actions via warning.
 
 ---
 
-### ♻️ Compensating Control #compensating #fallback #resilience
+### Compensating Control
 
 **Command**
 
@@ -104,43 +100,28 @@ Provides alternative protection when primary controls fail.
 
 ---
 
-## 🧠 Key Takeaways #lessons-learned #secplus
+## Key Takeaways
 
-* Security is layered (#defense-in-depth)
-* Humans are part of the attack surface (#human-factor)
-* Detection without response is useless (#incident-response)
-* Backups are recovery, not prevention (#resilience)
+* Security is layered (defense in depth)
+* Humans are part of the attack surface (human factor)
+* Detection without response is useless (incident response)
+* Backups are recovery, not prevention (resilience)
 
 ---
 
-## 📌 Mapping Summary #cheatsheet
+## Mapping Summary
 
 | Control Type | Implementation     |
-
 | ------------ | ------------------ |
-
 | Preventive   | icacls permissions |
-
 | Detective    | hashing (certutil) |
-
 | Corrective   | restore file       |
-
 | Directive    | policy file        |
-
 | Deterrent    | warning message    |
-
 | Compensating | backup file        |
 
 ---
 
-## 🪖 Operator Notes #portfolio #interview-ready
+## Next Step
 
-* Demonstrated layered security controls in Windows
-* Simulated real-world integrity + recovery workflow
-* Bridges technical + administrative security concepts
-
----
-
-## 🚀 Next Step #next-steps #aaa
-
-➡️ AAA (Authentication, Authorization, Accounting)
+AAA (Authentication, Authorization, Accounting): see [Suspicious Login Detection](../detection/suspicious-login-detection.md).
