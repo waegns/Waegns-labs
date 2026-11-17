@@ -10,7 +10,7 @@ Implement and validate all major security control types in a Windows environment
 
 * Host: Windows 11 (HP OmniDesk)
 * Shell: Command Prompt (cmd)
-* Directory: `C:\Users\Waegn\Desktop\Waegns-labs`
+* Directory: `C:\Users\<you>\Desktop\Waegns-labs`
 
 ---
 
